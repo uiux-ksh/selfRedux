@@ -1,0 +1,16 @@
+.comments{
+  display: grid;
+  margin:0 auto;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:1rem;
+
+
+}
+.comments >div{
+border :1px solid #000000;
+  cursor: pointer;
+  &:hover{
+    background:#333333;
+    color:#ffffff;
+  }
+}
