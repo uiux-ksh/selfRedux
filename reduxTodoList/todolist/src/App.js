@@ -6,6 +6,7 @@ import {addUser,deleteUser,updateUserName} from "./features/Users";
 function App() {
     const dispatch =useDispatch();
     const userList =useSelector((state) => state.users.value )
+    console.log(userList);
     const [name,setName] =useState("");
     const [username,setUserName] =useState("");
     const [newUsername,setNewUsername]=useState("");
