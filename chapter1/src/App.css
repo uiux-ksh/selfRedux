@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+
+}
+.circle-container{
+  background:#ccc;
+
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  backgrond:red;
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: #FDCF51;
+  margin: 50px;
+}
+
+.circle.red {
+  background-color: #FD5151;
+  cursor: pointer;
+}
+
+.circle.blue {
+  background-color: #51A0FD;
+  border-radius: 0;
+}
