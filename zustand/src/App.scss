@@ -1,0 +1,144 @@
+$Bg-color:#51A0FD;
+@mixin absBox($p,$w,$h,$t:null,$r:null,$b:null,$l:null) {
+    position: $p;
+    width: $w;
+    height: $h;
+    top:$t;
+    right:$r;
+    bottom:$b;
+    left:$l;
+}
+
+.app{
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: $Bg-color;
+
+}
+.youtube p {
+    cursor: pointer;
+
+}
+.youtube p img:hover {
+    z-index: 50;
+    transform: scale(1.1);
+    transition: 0.3s;
+    position: relative;
+
+
+}
+.youtube p img {width:100%; height:100%; object-fit: cover; border: 2px solid #ffffff; border-radius: 5px;}
+
+
+
+.Modal{
+    @include absBox(fixed,100%,100vh,$t:0,$l:0);
+    background: rgba(0, 0, 0, 0.85);
+    padding:2rem;
+    box-sizing: border-box;
+
+    z-index: 50;
+}
+
+.Modal .con{
+    @include absBox(relative,100%,100%);
+
+}
+.Modal video,.Modal iframe {
+    @include absBox(absolute,100%,100%);
+    object-fit: cover;
+}
+.Modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.Modal .con .close {
+    @include absBox(absolute,35px,35px,$t:0,$r:0);
+    font: 18px/1 'arial';
+    background-color: #51A0FD;
+    text-align: center;
+    line-height: 35px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+
+
+main {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    background-color: $Bg-color;
+
+}
+
+.SwiperSum{
+    position: relative;
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+  overflow: hidden;
+
+
+}
+
+.title{
+    margin:20px auto;
+    color:#ffffff;
+    font-size: 18px;
+    font-weight:500;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    border:2px solid #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background:#ffffff;
+        color:$Bg-color;
+    }
+}
+
+//배너
+
+.Banner {
+    position: relative;
+    top:-1rem;
+    width:100%;
+    height: 950px;
+    z-index: 30;
+    background:url("./image/bg1.jpg") no-repeat center center;
+    background-size: cover;
+
+    p{
+        position: absolute;
+        top:350px;
+        margin:0 auto;
+        left:0;
+        right:0;
+        bottom:0;
+        width: 1200px;
+        height: 400px;
+
+    }
+    .bb{
+        position: absolute;
+        top:400px;
+        right:-800px;
+        width: 1200px;
+        margin:0 auto;
+        height: 600px;
+        img{
+
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}

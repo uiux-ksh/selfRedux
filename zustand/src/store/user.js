@@ -8,7 +8,7 @@ const useUsers = create(
      execute: async(url) =>{
          try{
              const response = await axios.get(url);
-             set({users: await response.data})
+             set({users: await response.data.items})
          }catch (err)  {
              console.log(err);
          }

@@ -1,9 +1,9 @@
-import './App.css';
-import {useRef, useState} from 'react';
+import { useState} from 'react';
 import useStore from "./store";
 import Todo from "./Todo";
 import User from "./components/User";
 import Banner from "./components/Banner";
+import Lol from "./components/Lol";
 
 
 
@@ -20,8 +20,13 @@ function App() {
        {/*{todos.map((todo,i) => {*/}
        {/*    return <Todo key={i} text={todo} id={1} />*/}
        {/*})}*/}
-     <Banner />
-     <User/>
+       <Banner />
+       <main>
+           <User/>
+           <Lol />
+       </main>
+
+
    </div>
   );
 }
