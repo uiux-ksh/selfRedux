@@ -11,7 +11,10 @@ app.use(morgan("dev"));
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
-
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*"); // 모든 도메인
+    res.header("Access-Control-Allow-Origin", "https://example.com"); // 특정 도메인
+});
 app.use("/users", userRouter); // http://localhost:5000/users/signup
 
 
