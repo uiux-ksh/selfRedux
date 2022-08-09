@@ -36,7 +36,7 @@ function User({index,setIndex}) {
               <Title text="로스트아크 " />
                 <Swiper className='youtubeWrap' spaceBetween={20}  navigation
                     loop={true} breakpoints={{
-                320: {slidesPerView: 2, spaceBetween: 5,},
+                320: {slidesPerView: 2, spaceBetween: 15,},
                 1200: {slidesPerView: 6, spaceBetween: 25,},
                 }}
                 >
@@ -59,8 +59,8 @@ function User({index,setIndex}) {
             {vids.length !== 0 && (
             <Modal isOpen ={isOpen} setIsOpen={setIsOpen}>
                 <iframe
-                    src={`https://www.youtube.com/embed/${vids[index].snippet.resourceId.videoId}`}
-                    frameBorder='0'></iframe>
+                    src={`https://www.youtube.com/embed/${vids[index].snippet.resourceId.videoId}?autoplay=1&mute=1 controls=0`}
+                    frameBorder='0'  allow="fullscreen"></iframe>
             </Modal>
                 )}
         </>

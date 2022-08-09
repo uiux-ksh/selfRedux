@@ -17,11 +17,11 @@ function Lol({index,setIndex}) {
     return(
         <>
         <Title text="리그오브레전드" />
-        <div>
+        <div className='SwiperSum'>
            <Swiper
                spaceBetween={20}  navigation
                loop={true} breakpoints={{
-               320: {slidesPerView: 2, spaceBetween: 5,},
+               320: {slidesPerView: 2, spaceBetween: 15,},
                1200: {slidesPerView: 6, spaceBetween: 25,},
            }}
            >{users.map((user,idx) => {

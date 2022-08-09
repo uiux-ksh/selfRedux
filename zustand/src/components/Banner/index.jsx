@@ -10,15 +10,15 @@ function Banner() {
 
     return(
         <div className="Banner">
-            <p>
-                <span>
-                    {/*<img src={obj2} alt=""/>*/}
-                </span>
-            </p>
+            {/*<p>*/}
+            {/*    <span>*/}
+            {/*        /!*<img src={obj2} alt=""/>*!/*/}
+            {/*    </span>*/}
+            {/*</p>*/}
 
-                <div className="bb">
-                    {/*<img src={obj1} alt=""/>*/}
-                </div>
+                {/*<div className="bb">*/}
+                {/*    /!*<img src={obj1} alt=""/>*!/*/}
+                {/*</div>*/}
 
         </div>
 
