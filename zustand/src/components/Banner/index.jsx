@@ -1,5 +1,5 @@
-import obj1 from "../../image/obj1.png"
-import obj2 from "../../image/obj2.png"
+// import obj1 from "../../image/obj1.png"
+// import obj2 from "../../image/obj2.png"
 
 
 
@@ -12,12 +12,12 @@ function Banner() {
         <div className="Banner">
             <p>
                 <span>
-                    <img src={obj2} alt=""/>
+                    {/*<img src={obj2} alt=""/>*/}
                 </span>
             </p>
 
                 <div className="bb">
-                    <img src={obj1} alt=""/>
+                    {/*<img src={obj1} alt=""/>*/}
                 </div>
 
         </div>

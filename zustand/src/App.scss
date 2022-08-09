@@ -59,7 +59,7 @@ $Bg-color:#51A0FD;
 .Modal .con .close {
     @include absBox(absolute,35px,35px,$t:0,$r:0);
     font: 18px/1 'arial';
-    background-color: #51A0FD;
+    background-color: $Bg-color;
     text-align: center;
     line-height: 35px;
     color: #ddd;

@@ -13,7 +13,6 @@ const useUsers = create(
              console.log(err);
          }
 
-
      }
     }))
 );
